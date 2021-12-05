@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:maroon;">
+        <div class="container">
+            <a class="navbar-brand" style="font-family: Gadget, sans-serif; font-weight: bold;font-size:x-large; color: antiquewhite" id="Home" asp-area="" asp-controller="Home" asp-action="Index">My Movies</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-.5">
+                    <li class="nav-item">
+                        <a id="Home" class="nav-link text-dark navbar-brand" style="font-weight:bold; padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Home" asp-action="Index"> Home  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Database" class="nav-link text-dark navbar-brand" style="font-weight:bold; padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Home" asp-action="About"> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Uematsu" class="nav-link text-dark navbar-brand" style="font-weight:bold; padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Actors" asp-action="Tom"> Tom Hardy  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Kondo" class="nav-link text-dark navbar-brand" style="font-weight:bold; padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Actors" asp-action="Johnny"> Johnny Depp  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Meguro" class="nav-link text-dark navbar-brand" style="font-weight:bold;  padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Actors" asp-action="Heath"> Heath Ledger  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Wise" class="nav-link text-dark navbar-brand" style="font-weight:bold;  padding-left:.5rem; margin-right:0; margin-left:0; color:antiquewhite !important" asp-area="" asp-controller="Actors" asp-action="Robert"> Robert Downey Jr  </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+</body>
+</html>
